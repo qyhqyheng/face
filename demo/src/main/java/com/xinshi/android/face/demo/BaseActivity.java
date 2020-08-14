@@ -28,6 +28,7 @@ public class BaseActivity extends Activity implements CompoundButton.OnCheckedCh
 
     <T extends View> T findViewByIdAndSetListener(@IdRes int id) {
         T view = findViewById(id);
+
         if (view instanceof CheckBox) {
             ((CheckBox) view).setOnCheckedChangeListener(this);
         }
