@@ -40,6 +40,7 @@ public class FaceCompareActivity extends BaseActivity {
         addImageButton2 = findViewByIdAndSetListener(R.id.add_image2_button);
         imageView1 = findViewById(R.id.image_view1);
         imageView2 = findViewById(R.id.image_view2);
+
         faceCompareResultView = findViewById(R.id.face_compare_result_view);
     }
 
