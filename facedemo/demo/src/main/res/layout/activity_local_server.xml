@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LocalServerActivity">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="绑定端口：" />
+
+            <EditText
+                    android:id="@+id/bind_port_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="8080" />
+
+            <Button
+                    android:id="@+id/start_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="开始" />
+
+            <Button
+                    android:id="@+id/stop_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="停止" />
+
+            <Button
+                    android:id="@+id/return_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="退出" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="客户端都已同步完成：" />
+            <Button
+                    android:id="@+id/clear_deleted_person"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="清空已删除人员" />
+
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/log_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:maxLines="500" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

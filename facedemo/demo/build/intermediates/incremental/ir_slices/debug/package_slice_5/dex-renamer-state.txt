@@ -1,0 +1,4 @@
+#Wed Jul 08 10:29:18 CST 2020
+base.0=C\:\\Users\\acer\\Desktop\\XsDemo\\demo-source\\facedemo\\demo\\build\\intermediates\\transforms\\dexMerger\\debug\\5
+path.0=classes.dex
+renamed.0=classes.dex

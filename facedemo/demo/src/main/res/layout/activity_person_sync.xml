@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".PersonSyncActivity">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            <EditText
+                    android:id="@+id/et_sync_domain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="http://10.20.111.31:8080" />
+
+            <CheckBox
+                    android:id="@+id/cbx_full_sync"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开启全量同步" />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            <Button
+                    android:id="@+id/btn_start_sync"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="开始同步" />
+
+            <Button
+                    android:id="@+id/btn_stop_sync"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="停止同步" />
+
+            <Button
+                    android:id="@+id/btn_lib_statis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="当前底库状态查询" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            <Button
+                    android:id="@+id/btn_return"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="退出" />
+
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/tv_sync_log"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:maxLines="500" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

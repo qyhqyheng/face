@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FaceCollectActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/return_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/return_text" />
+
+            <CheckBox
+                android:id="@+id/continuous_collect_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="连续采集" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.xinshi.android.face.view.SingleCameraView
+                        android:id="@+id/camera_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:equal_ratio_scale="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image_view1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+
+                    <ImageView
+                        android:id="@+id/image_view2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+
+                    <ImageView
+                        android:id="@+id/image_view3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+
+                    <ImageView
+                        android:id="@+id/image_view4"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+
+                    <ImageView
+                        android:id="@+id/image_view5"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+
+                    <ImageView
+                        android:id="@+id/image_view6"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+
+                    <ImageView
+                        android:id="@+id/image_view7"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+
+                    <ImageView
+                        android:id="@+id/image_view8"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
